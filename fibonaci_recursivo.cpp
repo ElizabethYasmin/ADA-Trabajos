@@ -1,17 +1,17 @@
 #include <iostream>
 using namespace std;
 
-long long int fibonacci(int x)
+long long int fibonaci(int x)
 {
     if (x <= 1)
         return 1;
    
-    return  fibonacci(x-1) + fibonacci(x-2);
+    return  fibonaci(x-1) + fibonaci(x-2);
 }
 
 void imprimir(int limite){
    for (int i = 1; i < limite; i++)
-        std::cout<< "..["<<i << "]..->"<< fibonacci(i)<<"\n"; 
+        cout<< "..["<<i << "]..->"<< fibonaci(i)<<"\n"; 
 }
 
 int main()
