@@ -5,7 +5,7 @@ from math import log
 def MAX(A):
 	contador = 0
 	mmax = A[0]
-	for i in range(l, len(A)):
+	for i in range(1, len(A)):
 		if A[i] > mmax:
 			mmax = A[i]
 			contador += 1
